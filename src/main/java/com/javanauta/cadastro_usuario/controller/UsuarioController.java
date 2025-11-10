@@ -36,7 +36,7 @@ public ResponseEntity<List<Usuario>> buscarTodos() {
     return ResponseEntity.ok(usuarioService.BuscarTodos());
 }
 
-    @DeleteMapping
+    @DeleteMapping("/email")
     public ResponseEntity<Void> DeletarUsuarioPorEmail(@RequestParam String email){
         usuarioService.DeletarUsuarioPorEmail(email);
         return ResponseEntity.ok().build();
