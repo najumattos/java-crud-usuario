@@ -1,0 +1,22 @@
+### 1. POST: Salvar um Novo Usuário
+POST http://localhost:8081/usuarios
+Content-Type: application/json
+
+{
+    "nome": "Ana Mattos",
+    "email": "anajuliamattos02@gmail.com"
+}
+### 2. GET: Buscar TODOS os Usuários
+GET http://localhost:8081/usuarios
+
+### 4. PUT: Atualizar Usuário por ID
+PUT http://localhost:8081/usuarios?id=1
+Content-Type: application/json
+
+{
+    "nome": "Ana Julia Mattos",
+    "email": "anajuliamattos02@gmail.com"
+}
+
+### 5. DELETE: Deletar Usuário por E-mail
+DELETE http://localhost:8081/usuarios/email?email=anajuliamattos02@gmail.com
